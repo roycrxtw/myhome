@@ -4,6 +4,7 @@ var express = require('express');
 var app = express();
 var https = require('https');
 var fs = require('fs');
+var serverConfig = require('./config/main.config');
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
@@ -25,8 +26,8 @@ app.use(function(err, req, res, next){
 });
 
 var httpsOpt = {
-	key: fs.readFileSync('./tls/privkey.pem'),
-	cert: fs.readFileSync('./tls/fullchain.pem')
+	key: fs.readFileSync(serverConfig.mainkey),
+	cert: fs.readFileSync(serverConfig.maincert)
 };
 
 // setup HTTPS server
