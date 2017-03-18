@@ -1,0 +1,25 @@
+{
+  "name": "myhome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "http-proxy": "^1.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royvbtw/myhome.git"
+  },
+  "author": "Roy Lu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/royvbtw/myhome/issues"
+  },
+  "homepage": "https://github.com/royvbtw/myhome#readme"
+}
