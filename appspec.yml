@@ -1,0 +1,14 @@
+version: 1.0
+os: linux
+files:
+  - source: /
+    destination: /var/node/myhome
+hooks:
+  BeforeInstall:
+    - location: deploy/before-install
+      timeout: 300
+      runas: ec2-user
+  AfterInstall:
+    - location: deploy/after-install
+      timeout: 300
+      runas: ec2-user
