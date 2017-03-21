@@ -1,6 +1,6 @@
 # deploy/before-install
 #!/bin/bash
-kill $(cat ~/myhome.pid)
+pm2 delete myhome
 cp /var/node/myhome/config ~/backup/myhome/
 shopt -s extglob
 rm -fr /var/node/myhome/.gitignore
