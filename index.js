@@ -11,7 +11,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static('./public'));
 
 
-app.set('port', 3001);
+app.set('port', 3000);
 
 app.get(['/', '/home'], function(req, res, next){
 	res.render('home');
