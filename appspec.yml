@@ -5,10 +5,10 @@ files:
     destination: /var/node/myhome
 hooks:
   BeforeInstall:
-    - location: deploy/before-install
+    - location: deploy/before-install.sh
       timeout: 300
       runas: ec2-user
   AfterInstall:
-    - location: deploy/after-install
+    - location: deploy/after-install.sh
       timeout: 300
       runas: ec2-user
