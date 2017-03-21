@@ -1,4 +1,7 @@
 # deploy/before-install
 #!/bin/bash
 kill $(cat ~/myhome.pid)
-rm -fR /var/node/myhome
+cp /var/node/myhome/config ~/backup/myhome/
+shopt -s extglob
+rm -fr /var/node/myhome/!(config|node_modules)
+shopt -u extglob
