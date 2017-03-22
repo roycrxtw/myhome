@@ -21,10 +21,10 @@ permissions:
       - directory
 hooks:
   BeforeInstall:
-    - location: deploy/before-install.sh
+    - location: ./deploy/before-install.sh
       timeout: 100
       runas: ec2-user
   AfterInstall:
-    - location: deploy/after-install.sh
+    - location: ./deploy/after-install.sh
       timeout: 100
       runas: ec2-user
