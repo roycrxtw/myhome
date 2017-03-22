@@ -1,3 +1,6 @@
 # myhome
+The main page for https://royvbtw.uk
 
-This project is based on node.js and Express.
+This is a simple project based on node.js and Express.
+The view engine is handlerbars.
+It uses AWS CodeDeploy for auto-deployment.
