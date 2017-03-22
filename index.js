@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 var https = require('https');
 var fs = require('fs');
-var serverConfig = require(__dirname + '/config/main.config');
+var serverConfig = require('./config/main.config')(__dirname);
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
@@ -12,6 +12,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.set('port', 3000);
+app.set('views', __dirname + '/views');
 
 app.get(['/', '/home'], function(req, res, next){
 	res.render('home');
@@ -26,13 +27,12 @@ app.use(function(err, req, res, next){
 });
 
 var httpsOpt = {
-	key: fs.readFileSync(__dirname + serverConfig.mainkey),
-	cert: fs.readFileSync(__dirname + serverConfig.maincert)
+	key: fs.readFileSync(serverConfig.mainkey),
+	cert: fs.readFileSync(serverConfig.maincert)
 };
 
 // setup HTTPS server
 https.createServer(httpsOpt, app).listen(app.get('port'), function(){
 	console.log('HOME server started on port %s', app.get('port'));
 	console.log('伺服器已啟動。');
-	console.log('__dirname=', __dirname);
 });
