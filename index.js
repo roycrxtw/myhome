@@ -36,3 +36,12 @@ https.createServer(httpsOpt, app).listen(app.get('port'), function(){
 	console.log('HOME server started on port %s', app.get('port'));
 	console.log('伺服器已啟動。');
 });
+
+var httpapp = express();
+var httpServer = require('http').createServer(httpapp);
+httpServer.listen(3001);
+
+// redirect all request from http to https
+httpapp.get('*', function(req, res){
+	res.redirect('https://royvbtw.uk/' + req.url);
+});
