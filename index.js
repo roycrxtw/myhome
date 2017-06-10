@@ -43,5 +43,5 @@ httpServer.listen(3001);
 
 // redirect all request from http to https
 httpapp.get('*', function(req, res){
-	res.redirect('https://royvbtw.uk/' + req.url);
+	res.redirect('https://royvbtw.uk' + req.url);
 });
