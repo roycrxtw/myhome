@@ -14,6 +14,7 @@ body{
 	margin: 0;
 	padding: 0;
 	background-color: #222;
+	font-size: 12px;
 }
 @media (min-width: 1280px) {
 	body {
@@ -38,6 +39,7 @@ ul{
 	margin: 0 auto;
 	background-color: #222;
 	padding: 10px;
+	color: darkgrey;
 }
 @media (min-width: 720px){
 	.content{
@@ -110,7 +112,7 @@ ul{
 		width: 440px;
 		height: 100px;
 		z-index: 0;
-		border: 1px solid grey;
+		border: 1px solid #5A5A5A;
 		border-top-left-radius: 3px;
 		border-bottom-left-radius: 3px;
 		padding-left: 50px;
@@ -124,8 +126,8 @@ ul{
 	.title{
 		width: 500px;
 		height: 120px;
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
 		padding: 40px 60px;
 		font-size: 20px;
 		line-height: 40px;
