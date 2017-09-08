@@ -14,11 +14,11 @@ body{
 	margin: 0;
 	padding: 0;
 	background-color: #222;
-	font-size: 14px;
+	font-size: 16px;
 }
 @media (min-width: 720px) {
 	body {
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 @media (min-width: 1280px) {
