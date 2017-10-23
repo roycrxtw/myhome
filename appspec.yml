@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: ./public
-    destination: /usr/share/nginx/html
+    destination: /srv/www/myhome
 permissions:
   - object: /deploy
     pattern: "**"
