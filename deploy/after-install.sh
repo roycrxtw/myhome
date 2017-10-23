@@ -1,7 +1,8 @@
 # deploy/after-install.sh
 #!/bin/bash
 source /home/ec2-user/.bash_profile
-cd /usr/share/nginx/html
-sudo chown -R ec2-user /usr/share/nginx/html
-sudo chgrp -R ec2-user /usr/share/nginx/html
-chmod -R 755 /usr/share/nginx/html
+sudo mkdir -p /srv/www/myhome
+cd /srv/www/myhome
+sudo chown -R ec2-user /srv/www/myhome
+sudo chgrp -R ec2-user /srv/www/myhome
+chmod -R 755 /srv/www/myhome
