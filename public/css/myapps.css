@@ -1,0 +1,54 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-family: 'Microsoft JhengHei';
+	color: snow;
+	font-weight: 100;
+	overflow-x: hidden;
+}
+
+body{
+	width: 100vw;
+	margin: 0;
+	padding: 50px;
+	background-color: #222;
+	font-size: 16px;
+}
+@media (min-width: 720px) {
+	body {
+		font-size: 16px;
+	}
+}
+@media (min-width: 1280px) {
+	body {
+		font-size: 17px;
+	}
+}
+
+a{
+	color: cyan;
+	text-decoration: none;
+}
+a:hover{
+	color: skyblue;
+}
+
+h2{
+	color: wheat;
+}
+
+.app-info{
+	clear: both;
+}
+
+.app-preview{
+	float: right;
+	margin: 5px;
+	box-shadow: 0 0px 5px 1px grey;
+	transition: all 750ms;
+}
+.app-preview:hover{
+	box-shadow: 0 0px 5px 1px snow;
+}

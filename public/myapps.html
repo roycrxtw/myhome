@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang='en'>
+
+<head>
+  <title>Roy Lu - my apps</title>
+  <link rel="stylesheet" type="text/css" href="./css/myapps.css">
+  <meta charset="UTF-8">
+  <meta name='theme-color' content='#222' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1>My apps</h1>
+	
+	<p>Every public web services below has HTTPS supported by <a href='https://letsencrypt.org/'>Let's Encrypt</a> and use <a href='https://en.wikipedia.org/wiki/HTTP/2'>http/2</a> protocol.</p>
+	
+  
+  <div class='app-info'>
+    <a href='img/beautyland_desktop_thumb.webp' target='_blank'>
+      <img class='app-preview' title='Beautyland desktop screenshot' style='width:262px;height:400px' src='img/beautyland_desktop_thumb.webp'>
+    </a>
+    <a href='img/beautyland_mobile_full.webp' target='_blank'>
+      <img class='app-preview' title='Beautyland mobile screenshot' style='width:193px;height:397px' src='img/beautyland_mobile_full.webp'>
+    </a>
+    <h2>Beautyland</h2>
+    <a href='https://beautyland.royvbtw.uk/'>https://beautyland.royvbtw.uk/</a>
+    <p>An image gallery service for the PTT beauty board. It displays image contents fetched from the Beautyladn API in an elegant and easy to read way.</p>
+    <ul>
+      <li>React/redux as the UI foundation.</li>
+      <li>Progressive web app implement. Can be added to mobile user's home screen.</li>
+      <li>Service hosted on Amazon EC2 instance with the nginx as the reverse proxy.</li>
+      <li>Service managed by <a href='https://github.com/Unitech/pm2'>pm2</a>.</li>
+    </ul>
+  </div>
+  
+  
+	<div class='app-info'>
+    <h2>Beautyland API</h2>
+    <a href='https://beautyland-api.royvbtw.uk/readme'>https://beautyland-api.royvbtw.uk/</a>
+    <p>An image data service of the PTT Beauty board.</p>
+    <ul>
+      <li>A nodejs/expressjs based web API service.</li>
+      <li>Persist data by mongodb. Cloud database service provided by mlab.com.</li>
+      <li>Service hosted on Amazon EC2 instance with the nginx as the reverse proxy.</li>
+      <li>Auto deployed from github by AWS Codedeploy.</li>
+    </ul>
+  </div>
+	
+  
+  <div class='app-info'>
+    <a href='img/rtsm_thumb.webp' target='_blank'>
+      <img class='app-preview' title='RTSM desktop query result screenshot' style='width:199px;height:312px' src='img/rtsm_thumb.webp'>
+    </a>
+    <a href='img/rtsm_01_thumb.webp' target='_blank'>
+      <img class='app-preview' title='RTSM desktop screenshot' style='width:356px;height:312px' src='img/rtsm_01_thumb.webp'>
+    </a>
+    <h2>RTSM</h2>
+    <a href='https://royvbtw.github.io/rtsm/'>https://royvbtw.github.io/rtsm</a>
+    <p>A user-friendly, responsive designed web service for display information from the RTSM API service.</p>
+    <ul>
+      <li>Use React as the UI foundation.</li>
+      <li>Responsive web design</li>
+      <li>Service hosted on github.io</li>
+    </ul>
+  </div>
+  
+  <div class='app-info'>
+    <h2>RTSM API service</h2>
+    <a href='https://rtsmapi.royvbtw.uk/readme'>https://rtsmapi.royvbtw.uk/</a>
+    <p>A real-time motorway traffic speed data API service of Taiwan. It fetches and parses data from the national freeway bureau official site. The result data is formatted in JSON.</p>	
+    <ul>
+      <li>A nodejs/expressjs based web API service</li>
+      <li>A RESTful API design</li>
+      <li>Service hosted on Amazon EC2 instance with the nginx as the reverse proxy.</li>
+      <li>Auto deployed from github by AWS Codedeploy.</li>
+      <li>Process manager: pm2 module.</li>
+    </ul>
+  </div>
+  
+
+	<h2>Grumbler</h2>
+	<a href='https://grumbler.royvbtw.uk/'>https://grumbler.royvbtw.uk/</a>
+	<ul>
+    <li>Node.js/Expressjs based web service</li>
+    <li>Responsive web design</li>
+    <li>Use Handlebar as the expressjs view engine.</li>
+    <li>Database: mongodb, use mongoose middleware. Hosted on mlab.com.</li>
+    <li>Google/facebook directly login support</li>
+    <li>Use bcrypt to store salted passwords.</li>
+    <li>Process manager: pm2 module.</li>
+    <li>Service hosted on Amazon EC2 instance and use nginx as the reverse proxy.</li>
+    <li>Auto deployed from github by AWS Codedeploy.</li>
+  </ul>
+	
+	<h2>Other projects</h2>
+  
+  <h2>ig saver</h2>
+  <a href='https://github.com/royvbtw/igsaver'>https://github.com/royvbtw/igsaver</a>	
+  <p>A Google Chrome extension let user save instagram picture/video easily.</p>
+  
+  <p>Roy Lu. Oct, 2017</p>
+  <a href='/'>Back to home</a>
+</body>
+
+</html>
