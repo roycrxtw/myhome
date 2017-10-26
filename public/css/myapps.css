@@ -39,21 +39,28 @@ h2{
 	color: wheat;
 }
 
+img{
+	border: 1px solid #222;
+	transition: all 700ms;
+}
+img:hover{
+	border: 1px solid snow;
+}
+
 .app-info{
 	clear: both;
 }
 
 .app-preview{
 	margin: 5px auto;
-	box-shadow: 0 0px 5px 1px grey;
+	border: 1px solid #222;
+	color: grey;
+	text-align: center;
 }
 @media (min-width: 720px){
 	.app-preview{
 		float: right;
 		transition: all 750ms;
-	}
-	.app-preview:hover{
-		box-shadow: 0 0px 5px 1px snow;
 	}
 }
 
