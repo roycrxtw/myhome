@@ -28,11 +28,12 @@ body{
 }
 
 a{
-	color: cyan;
+	color: lightcoral;
 	text-decoration: none;
 }
 a:hover{
-	color: skyblue;
+	color: coral;
+	text-decoration: underline;
 }
 
 h2{
@@ -49,6 +50,7 @@ img:hover{
 
 .app-info{
 	clear: both;
+	page-break-after: always;
 }
 
 .app-preview{
@@ -92,6 +94,17 @@ img:hover{
 }
 @media (min-width: 720px){
 	.img-camou-creator{
+		width: auto;
+		height: 360px;
+	}	
+}
+
+.img-bunyan-log-viewer{
+	width: auto;
+	height: 150px;
+}
+@media (min-width: 720px){
+	.img-bunyan-log-viewer{
 		width: auto;
 		height: 360px;
 	}	
