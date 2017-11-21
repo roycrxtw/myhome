@@ -28,11 +28,12 @@ body{
 }
 
 a{
-	color: lightcoral;
+	/* color: lightcoral; */
+	color: rosybrown;
 	text-decoration: none;
 }
 a:hover{
-	color: coral;
+	color: #9f6060;
 	text-decoration: underline;
 }
 
