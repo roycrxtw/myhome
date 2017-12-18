@@ -12,11 +12,34 @@
 
 <body>
   <h1>My apps</h1>
-	
+  
+  <div>
+    <ul class='app-list'>
+      <li>Web APP</li>
+      <ul class='app-sublist'>
+        <li><a href='#beautyland'>Beautyland</a></li>
+        <li><a href='#beautyland-api'>Beautyland API service</a></li>
+        <li><a href='#rtsm'>RTSM</a></li>
+        <li><a href='#rtsm-api'>RTSM API service</a></li>
+        <li><a href='#camou-creator'>CamouCreator</a></li>
+        <li><a href='#bunyan-log-viewer'>Bunyan Log Viewer</a></li>
+        <li><a href='#grumbler'>Grumbler</a></li>
+      </ul>
+      <li>Standalone node.js app</li>
+      <ul>
+        <li><a href='#beautyland-downloader'>Beautyland Image Downloader</a></li>
+      </ul>
+      <li>Chrome extensions</li>
+      <ul>
+        <li><a href='#ig-saver'>IG Saver</a></li>
+      </ul>
+    </ul>
+  </div>
+
 	<p>Every public web services below has HTTPS supported by <a href='https://letsencrypt.org/'>Let's Encrypt</a> and use <a href='https://en.wikipedia.org/wiki/HTTP/2'>http/2</a> protocol.</p>
 	
   
-  <div class='app-info'>
+  <div class='app-info' id='beautyland'>
     <h2>Beautyland</h2>
     
     <figure class='app-preview'>
@@ -42,7 +65,7 @@
   </div>
   
   
-	<div class='app-info'>
+	<div class='app-info' id='beautyland-api'>
     <h2>Beautyland API</h2>
     <a href='https://beautyland-api.royvbtw.uk/readme'>https://beautyland-api.royvbtw.uk/</a><br/>
     <a href='https://github.com/royvbtw/beautyland-api'>GitHub</a>
@@ -56,7 +79,7 @@
   </div>
 	
   
-  <div class='app-info'>
+  <div class='app-info' id='rtsm'>
     <h2>RTSM</h2>
 
     <figure class='app-preview'>
@@ -79,7 +102,7 @@
     </ul>
   </div>
   
-  <div class='app-info'>
+  <div class='app-info' id='rtsm-api'>
     <h2>RTSM API service</h2>
     <a href='https://rtsmapi.royvbtw.uk/readme'>https://rtsmapi.royvbtw.uk/</a><br/>
     <a href='https://github.com/royvbtw/rtsmapi'>GitHub</a>
@@ -93,10 +116,10 @@
     </ul>
   </div>
 
-  <div class='app-info'>
+  <div class='app-info' id='camou-creator'>
     <h2>CamouCreator</h2>
     <figure class='app-preview'>
-      <figcaption>CamouCreator screenshots</figcaption>
+      <figcaption>CamouCreator screenshot</figcaption>
       <a href='img/camou_creator_desktop.webp' target='_blank'>
         <img class='img-camou-creator' title='CamouCreator desktop screenshot' src='img/camou_creator_desktop.webp'>
       </a>
@@ -112,26 +135,26 @@
     </ul>
   </div>
   
-  <div class='app-info'>
+  <div class='app-info' id='bunyan-log-viewer'>
     <h2>Bunyan Log Viewer</h2>
     <figure class='app-preview'>
-      <figcaption>Bunyan Log Viewer screenshots</figcaption>
-      <a href='img/myapp_bunyan-log-viewer.webp' target='_blank'>
-        <img class='img-bunyan-log-viewer' title='Bunyan log viewer desktop screenshot' src='img/myapp_bunyan-log-viewer.webp'>
+      <figcaption>Bunyan Log Viewer screenshot</figcaption>
+      <a href='img/myapp-bunyan-log-viewer.webp' target='_blank'>
+        <img class='img-bunyan-log-viewer' title='Bunyan log viewer desktop screenshot' src='img/myapp-bunyan-log-viewer.webp'>
       </a>
     </figure>
 
     <a href='https://royvbtw.github.io/bunyan-log-viewer/'>https://royvbtw.github.io/bunyan-log-viewer/</a><br/>
     <a href='https://github.com/royvbtw/bunyan-log-viewer'>GitHub</a>
 
-    <p>A <a href='https://github.com/trentm/node-bunyan'>bunyan</a> log viewer which display the logs in a pretty way with some filters.</p>
+    <p>A <a href='https://github.com/trentm/node-bunyan'>bunyan</a> log viewer which can display the logs in a pretty way with search and keyword highlight.</p>
 
     <ul>
       <li>React base web app.</li>
     </ul>
   </div>
 
-  <div class='app-info'>
+  <div class='app-info' id='grumbler'>
     <h2>Grumbler</h2>
     <a href='https://grumbler.royvbtw.uk/'>https://grumbler.royvbtw.uk/</a><br/>
     <a href='https://github.com/royvbtw/grumbler'>GitHub</a>
@@ -148,14 +171,33 @@
       <li>Auto deployed from github by AWS Codedeploy.</li>
     </ul>
   </div>
+
+  <h2>Standalone Node.JS APP</h2>
+
+  <div class='app-info' id='beautyland-downloader'>
+    <h2>Beautyland Image Downloader</h2>
+
+    <figure class='app-preview'>
+      <figcaption>Beautyland Image Downloader screenshot</figcaption>
+      <a href='img/myapp-beautyland-downloader.webp' target='_blank'>
+        <img class='img-beautyland-downloader' title='Beautyland Downloader screenshot' src='img/myapp-beautyland-downloader.webp'>
+      </a>
+    </figure>
+
+    <a href='https://github.com/royvbtw/beautyland-get-images'>https://github.com/royvbtw/beautyland-get-images</a>	
+    <p>A node.js app which can help you download images from the Beautyland.</p>
+  </div>
+  
 	
 	<h2>Other projects</h2>
   
-  <h2>ig saver</h2>
-  <a href='https://github.com/royvbtw/igsaver'>https://github.com/royvbtw/igsaver</a>	
-  <p>A Google Chrome extension let user save instagram picture/video easily.</p>
+  <div class='app-info' id='ig-saver'>
+    <h2>instagram image saver</h2>
+    <a href='https://github.com/royvbtw/igsaver'>https://github.com/royvbtw/igsaver</a>	
+    <p>A Google Chrome extension let user save instagram picture/video easily.</p>
+  </div>
   
-  <p>Roy Lu. Oct, 2017</p>
+  <p>Roy Lu @18 Dec 2017</p>
   <a href='/index.html'>Back to home</a>
 </body>
 

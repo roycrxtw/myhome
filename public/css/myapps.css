@@ -39,6 +39,7 @@ a:hover{
 
 h2{
 	color: wheat;
+	clear: both;
 }
 
 img{
@@ -47,6 +48,14 @@ img{
 }
 img:hover{
 	border: 1px solid snow;
+}
+
+.app-list{
+	border-left: 15px solid wheat;
+}
+
+.app-sublist{
+	padding-left: 30px;
 }
 
 .app-info{
@@ -109,4 +118,15 @@ img:hover{
 		width: auto;
 		height: 360px;
 	}	
+}
+
+.img-beautyland-downloader{
+	width: auto;
+	height: 150px;
+}
+@media (min-width: 720px){
+	.img-beautyland-downloader{
+		width: auto;
+		height: 300px;
+	}
 }
