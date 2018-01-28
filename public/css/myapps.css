@@ -129,3 +129,15 @@ img:hover{
 		height: 300px;
 	}
 }
+
+
+.img-ascii-art-poster{
+	width: auto;
+	height: 150px;
+}
+@media (min-width: 720px){
+	.img-ascii-art-poster{
+		width: auto;
+		height: 250px;
+	}
+}
