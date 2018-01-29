@@ -32,6 +32,11 @@ a{
 	color: skyblue;
 	text-decoration: none;
 }
+@media (min-width: 720px){
+	a{
+		color: #EA9185;
+	}
+}
 a:hover{
 	text-decoration: underline;
 }
